@@ -80,6 +80,11 @@ case "$1" in
 	repo_sync $1
 	;;
 
+"ancora")
+	echo DEVICE=ancora >> .tmp-config &&
+	repo_sync $1
+	;;
+
 "galaxy-nexus")
 	echo DEVICE=maguro >> .tmp-config &&
 	repo_sync $1
@@ -173,6 +178,7 @@ case "$1" in
 	echo
 	echo Valid devices to configure are:
 	echo - galaxy-s2
+	echo - ancora
 	echo - galaxy-nexus
 	echo - nexus-4
 	echo - nexus-4-kk
