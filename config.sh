@@ -30,7 +30,7 @@ case `uname` in
 	exit -1
 esac
 
-GITREPO=${GITREPO:-"git://github.com/krotovic/repo-manifest"}
+GITREPO=${GITREPO:-"https://github.com/krotovic/repo-manifests"}
 BRANCH=${BRANCH:-b2g-cm9}
 
 while [ $# -ge 1 ]; do
